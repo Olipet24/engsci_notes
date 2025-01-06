@@ -73,4 +73,38 @@ P_{1}(x) = \underbrace{ \left( y_{1} - \frac{y_{2}- y_{1}}{x_{2}-x_{1}}x_{1} \ri
 $$
 ***General Case***:
 - Assume $x_{1}, x_{2}\dots x_{n+1}$ are distinct
-- Find $P_{n}(x) = a_{0}+a_{1}x + \dots a_{n}x^n]$
+- Find $P_{n}(x) = a_{0}+a_{1}x + \dots a_{n}x^n$ such that:
+$$
+\begin{cases}
+P_{n}(x_{1}) = a_{0}+a_{1}x_{1} + \dots a_{n}x_{1}^n = y_{1}\\
+P_{n}(x_{n+1}) = a_{0}+a_{1}x_{n+1} + \dots a_{n}x_{n+1}^n = y_{n+1}
+\end{cases}
+$$
+Matrix form
+$$
+\begin{pmatrix}
+1 & x_{1} & \dots & x_{1}^n \\
+\vdots \\
+1  & x_{n+1} & \dots & x_{n+1}^n
+\end{pmatrix} \begin{pmatrix}
+a_{0} \\
+a_{1} \\
+\vdots \\
+a_{n}
+\end{pmatrix}=\begin{pmatrix}
+y_{1} \\
+y_{2} \\
+\vdots \\
+y_{n}
+\end{pmatrix}
+$$
+Vandermonde Matrix: (non singular if $x_{1},\dots x_{n+1}$ are distinct)
+
+**Cost analysis**:
+- counting the number of floating point operations (FLOPs)
+- i.e. counting the number of +, -, x, divisions 
+
+**Evaluation**: given $\{a_{i}\}_{i=0}^n$ evaluate:
+$$
+P_{n}(x) = P_{n}(x) = a_{0}+a_{1}x_{1} + \dots a_{n}x_{1}^n = y_{1}
+$$
