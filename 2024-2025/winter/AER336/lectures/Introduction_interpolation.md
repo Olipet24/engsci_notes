@@ -148,5 +148,21 @@ Want: $|f(x) - P_{2}(x)| \leq \frac{1}{3!} \max_{S \in[a, b]}|f^{(3)}|(b-a)^3$
 
 Introduce 
 $$
-g_{2}(x) = f(s)- P_{2} - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}(s-x_{1})(a-x_{2})(s-x_{3})
+g_{2}(x) = f(s)- P_{2} - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}(s-x_{1})(s-x_{2})(s-x_{3})
 $$
+Note: $g_{2}(x) = 0$, $g(x_{1}) = 0, i = 1, 2, 3$ for which $x_{i}$ is interpolation point
+
+Thus, $g$ has at least four roots.
+
+Therefore: $g'$ has at least 3 roots
+=> $g''$ has has at least 2 roots
+=> $g'''$ has at least 1 root
+
+Let $\xi \in [a, b]$ s.t. $g'''(\xi) = 0$
+=>$$
+\begin{align}
+g'''(\xi) = f'''() - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}3! = 0 \\
+|f(x) - P_{2}(x)| = \frac{1}{3!}|f'''(\xi)||(x-x_{1})(x-x_{2})(x-x_{3})| \\
+|f(x) - P_{2}(x)| \leq \frac{1}{3!} \max_{S \in[a, b]}|f^{(3)}|(b-a)^3
+
+\end{align}$$
