@@ -15,4 +15,8 @@ Final exam comes from the recommended problems, so make sure to do them
 
 ## Lecture content
 
-Purpose of a control mechanism
+Purpose of a control mechanism: maintain process characteristics at the desired targets despite the effects of external noise and other perturbations by:
+- ensuring systems stability at all times;
+- reducing the difference between the system's real and desired ultimate behaviors (steady state)
+- creating proper system dynamics (transient response) towards desired targets
+- mitigating the effect of external factors on system's behaviors
