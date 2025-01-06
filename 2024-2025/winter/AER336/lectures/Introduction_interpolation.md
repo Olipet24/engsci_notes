@@ -24,4 +24,25 @@ From a given set of data that follows some graph:
 
 **Question**: Given n+1 data points $(x_{i}, y_{i})$, i = 1, 2, ... n+1, estimate y for any given x (i.e create a lookup table)
 
-Idea: fit a polynomial through the data points and evaluate the polynomial at the point of interest (x) 
+**Idea**: fit a polynomial through the data points and evaluate the polynomial at the point of interest (x) 
+
+**Polynomial Interpolation**: Given $(x_{i}, y_{i})$, i = 1, 2, .. n+1, find degree-n polynomial:
+$$
+P_{n}(x) = \sum_{j=0}^{n} a_{j}x^j
+$$ such that 
+$$
+P_{n}(x_{i}) = y_{i}, i = 1, 2,.. n+1
+$$ 
+Here $P_{n}$: interpolant and $\{x_{i}\}_{i=1}^{n+1}$ are the interpolation points
+
+Interpolant is defined by:
+1. Degree n polynomial
+2. Location of interpolation points
+
+**Goal**: given any data points, find $\{a_{j}\}_{j=0}^{n}$ in a systematic manner
+
+### Vandermonde's Method
+
+***Case $n=1$***: Linear interpolation
+- assume $x_{1} \neq x_{2}$ 
+- $P_{1}(x) = a_{0} + a_{1}$
