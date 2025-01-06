@@ -5,3 +5,8 @@ Course notes: self sufficient; if you closely follow the notes and listening in 
 
 Thursday: 1 hr lecture, 1 hr tutorial
 
+**Create Lab groups for by Monday 27th**
+- Labs has a preparation proportion
+- Need to read the general health and safety portion
+
+Final exam comes from the recommended problems
