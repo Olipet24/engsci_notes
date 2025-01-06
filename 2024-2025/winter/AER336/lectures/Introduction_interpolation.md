@@ -100,11 +100,27 @@ y_{n}
 $$
 Vandermonde Matrix: (non singular if $x_{1},\dots x_{n+1}$ are distinct)
 
-**Cost analysis**:
+#### Cost analysis:
 - counting the number of floating point operations (FLOPs)
 - i.e. counting the number of +, -, x, divisions 
 
 **Evaluation**: given $\{a_{i}\}_{i=0}^n$ evaluate:
 $$
-P_{n}(x) = P_{n}(x) = a_{0}+a_{1}x_{1} + \dots a_{n}x_{1}^n = y_{1}
+P_{n}(x) = P_{n}(x) = a_{0}+a_{1}x + \dots a_{n}x^n 
 $$
+Starting with n = 1, we get 2 FLOPs,
+$$
+a_{0} \underbrace{ + }_{ 1+ } \underbrace{ a_{1}x }_{ 1x }
+$$
+=>n=2: 3 additional flops
+$$
+a_{0} \underbrace{ + }_{ 1+ } \underbrace{ a_{1}x }_{ 1 \times } + \underbrace{ a_{2}x^2 }_{ 2 \times }
+$$
+=> similarly, n=3: 3 additional flops, since we know the values of $x^2$ and all lower powers of x (all we are doing is adding $a_{n+1}$ term and multiplying $x^n$ by $x$)
+Thus, total cost for $P_{n}(x): 3n - 1 \sim O(n)$ FLOPs
+
+
+**Cost Fraction**: Finding $\{a_{i}\}_{i=0}^n$
+1. Populate Vandermonde Matrix: $O(N^2)$ FLOPs
+2. Solve linear system: $O(n^3)$ FLOPs
+3. 
