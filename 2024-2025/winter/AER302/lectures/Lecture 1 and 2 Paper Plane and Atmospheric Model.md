@@ -19,6 +19,9 @@ From these equations, we want to solve for the $v(t)$ and $\gamma(t)$ to solve f
 ## <u>Atmospheric Flight </u>
 
 ####  (Standard) Atmospheric Model
+
+^3dfa92
+
 These variable are important in modelling the atmosphere
 - Temperature
 - Density

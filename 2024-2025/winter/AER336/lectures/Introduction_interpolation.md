@@ -1,6 +1,8 @@
 
 ## Useful definitions
 
+^f18d96
+
 **Cost**: how much computational effort is required to provide approximation (FLOP)
 
 **Accuracy/Error Analysis**: How closely does our (discrete) approximation estimate the exact (continuous) solution?
@@ -114,7 +116,7 @@ a_{0} \underbrace{ + }_{ 1+ } \underbrace{ a_{1}x }_{ 1x }
 $$
 =>n=2: 3 additional flops
 $$
-a_{0} \underbrace{ + }_{ 1+ } \underbrace{ a_{1}x }_{ 1 \times } + \underbrace{ a_{2}x^2 }_{ 2 \times }
+a_{0} \underbrace{ + }_{ 1+ } \underbrace{ a_{1}x }_{ 1 \times } \underbrace{ + }_{ 1 + } \underbrace{ a_{2}x^2 }_{ 2 \times }
 $$
 => similarly, n=3: 3 additional flops, since we know the values of $x^2$ and all lower powers of x (all we are doing is adding $a_{n+1}$ term and multiplying $x^n$ by $x$)
 Thus, total cost for $P_{n}(x): 3n - 1 \sim O(n)$ FLOPs
@@ -131,11 +133,20 @@ Assumptions:
 
 Then:
 $$
-|f(x) - P_{n}(x)| \leq \frac{1}{(n+1)!} \max_{S \in[a, b]}|f^{n+1}|(b-a)
+|f(x) - P_{n}(x)| \leq \frac{1}{(n+1)!} \max_{S \in[a, b]}|f^{(n+1)}|(b-a)^{n+1}
 $$
 **Observations**:
 1. Error depends on $f^{n+1}$
 	- Error depends on the difference between $P_{n}$ and $f$
 2. Interpolation is exact if $f$ is polynomial of degree $\leq n$
-3. If $|f^(n+1)|(b-a)^{n+1}$ grows slower then $(n+1)!$, then error decreases with n.
+3. If $|f^{(n+1)}|(b-a)^{n+1}$ grows slower then $(n+1)!$, then error decreases with n.
 
+
+**Proof for n = 2 case**:
+
+Want: $|f(x) - P_{2}(x)| \leq \frac{1}{3!} \max_{S \in[a, b]}|f^{(3)}|(b-a)^3$ 
+
+Introduce 
+$$
+g_{2}(x) = f(s)- P_{2} - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}(s-x_{1})(a-x_{2})(s-x_{3})
+$$
