@@ -123,4 +123,19 @@ Thus, total cost for $P_{n}(x): 3n - 1 \sim O(n)$ FLOPs
 **Cost Fraction**: Finding $\{a_{i}\}_{i=0}^n$
 1. Populate Vandermonde Matrix: $O(N^2)$ FLOPs
 2. Solve linear system: $O(n^3)$ FLOPs
-3. 
+
+#### Error Analysis: How accurate is our interpolant?
+Assumptions:
+1. $a \equiv x_{1} < x_{2}< \dots < x_{n_{1}} \equiv b$
+2. $f$ is smooth (more precisely $f^{n+1}$ is continuous)
+
+Then:
+$$
+|f(x) - P_{n}(x)| \leq \frac{1}{(n+1)!} \max_{S \in[a, b]}|f^{n+1}|(b-a)
+$$
+**Observations**:
+1. Error depends on $f^{n+1}$
+	- Error depends on the difference between $P_{n}$ and $f$
+2. Interpolation is exact if $f$ is polynomial of degree $\leq n$
+3. If $|f^(n+1)|(b-a)^{n+1}$ grows slower then $(n+1)!$, then error decreases with n.
+
