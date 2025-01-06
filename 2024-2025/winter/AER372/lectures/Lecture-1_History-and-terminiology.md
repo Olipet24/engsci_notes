@@ -36,16 +36,16 @@ Purpose of a control mechanism: maintain process characteristics at the desired 
 	- i.e. thermostat
 - Tracking (servo) control: ensures that system output(s) follows a desired trajectory (despite noise)
 	- i.e. rover path tracking
+
 Can also divide Automatic control systems as:
 - Open-loop control: The controller does not rely on the systems behavior to adjust the systems command, there is no feedback
 	- i.e. Toaster
 - Closed-loop (feedback) Control: controller determines control actions based on measurements of the systems controlled output
 	- Capable of handling system variations and uncertainties, external noise and disturbances, and unsatisfactory dynamics
 
-
 ### Closed-loop Controller
 Pros:
-- robustness to uncertainty
+- robustness to uncertainty unknown or inaccurate plant model, external  disturbances, sensor and actuator noise)
 	- Reliable sensing leads to system correction through computation and actuators
 - modification: can modify natural performance
 Cons:
@@ -59,3 +59,19 @@ Cons:
 - relise on linear input-output relationship for operation range, or in the close vicinity of normal operating input
 
 **Robust and adaptive feedback control**:
+- Can handle considerable variations in system parameters
+
+**Predictive Feedback Control**:
+- can estimate future value of output and use them for deriving control actions
+**Optimal Feedback Control**:
+- can obtain optimal control actions e.g. w.r.t. energy time, speed, etc.
+**Nonlinear Feedback Control**:
+- Can handle nonlinear input-output relationships
+
+#### Examples
+Example 1
+![[Pasted image 20250106174301.png]]
+
+Example 2
+![[Pasted image 20250106174328.png]]
+![[Pasted image 20250106174349.png]]
