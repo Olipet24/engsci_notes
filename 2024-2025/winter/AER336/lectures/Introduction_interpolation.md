@@ -45,4 +45,25 @@ Interpolant is defined by:
 
 ***Case $n=1$***: Linear interpolation
 - assume $x_{1} \neq x_{2}$ 
-- $P_{1}(x) = a_{0} + a_{1}$
+- $P_{1}(x) = a_{0} + a_{1}x$
+- Interpolation condition:
+$$\begin{align}
+P_{1}(x_{1}) = a_{0} + a_{1}x_{1} = y_{1} \\
+P_{1}(x_{2}) = a_{0} + a_{1}x_{2} = y_{2}
+\end{align}
+
+$$
+Matrix form:
+$$
+\begin{pmatrix}
+1 & x_{1} \\
+1 & x_{2}
+\end{pmatrix} \begin{pmatrix}
+a_{0} \\
+a_{1}
+\end{pmatrix}
+= \begin{pmatrix}
+y_{1} \\
+y_{2}
+\end{pmatrix}
+$$
