@@ -23,4 +23,18 @@ Purpose of a control mechanism: maintain process characteristics at the desired 
 
 **Control Mechanisms**:
 - Natural Controllers:
-	- 
+	- Controlled by nature, happen due to laws of physics
+- Artificial (Human Made control systems)
+	- uses inputs and math to make a decision
+
+**Artificial Control Systems**:
+- manual control: control actions made by humans (Car, Canadarm2)
+- Automatic control: Some or all aspects of system's behavior controlled without human's intervention (UAV, Nuclear Power Plant)
+
+**Automatic Control Systems**:
+- Regulatory control: controller maintains the system at a desired set point (despite noise)
+	- i.e. thermostat
+- Tracking (servo) control: ensures that system output(s) follows a desired trajectory (despite noise)
+	- i.e. rover path tracking
+Open Loop control:
+- 
