@@ -20,3 +20,7 @@ Purpose of a control mechanism: maintain process characteristics at the desired 
 - reducing the difference between the system's real and desired ultimate behaviors (steady state)
 - creating proper system dynamics (transient response) towards desired targets
 - mitigating the effect of external factors on system's behaviors
+
+**Control Mechanisms**:
+- Natural Controllers:
+	- 
