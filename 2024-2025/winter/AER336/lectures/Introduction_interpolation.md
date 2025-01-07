@@ -165,4 +165,4 @@ g'''(\xi) = f'''(\xi) - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}3! = 0 
 |f(x) - P_{2}(x)| = \frac{1}{3!}\underbrace{ |f'''(\xi)| }_{ \leq \max_{S \in[a, b]}|f^{'''}(si)| }\underbrace{ |(x-x_{1})(x-x_{2})(x-x_{3})| }_{ \leq (b-a)^3 } \\
 |f(x) - P_{2}(x)| \leq \frac{1}{3!} \max_{S \in[a, b]}|f^{(3)}|(b-a)^3
 
-\end{align}$$
+\end{align}$$ As required
