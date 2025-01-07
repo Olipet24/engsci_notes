@@ -52,7 +52,7 @@ Arbitrary Stressed Body
 - At every location on boundary, for each coordinate direction, either traction or displacement is specified
 	- No location where both is specified
 
-Two types of forces in solid mech. Body forces or surface tractions
+Two types of forces in solid mech: Body forces or surface tractions
 
 **Body Forces**: arise due to distribution of mass (gravity) or charge (EM) throughout body
 - consequence of volume and distribution of the appropriate physical characteristic throughout that volume
