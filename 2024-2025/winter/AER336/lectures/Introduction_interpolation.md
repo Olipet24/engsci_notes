@@ -32,7 +32,7 @@ From a given set of data that follows some graph:
 $$
 P_{n}(x) = \sum_{j=0}^{n} a_{j}x^j
 $$ such that 
-$$
+$$\Large
 P_{n}(x_{i}) = y_{i}, i = 1, 2,.. n+1
 $$ 
 Here $P_{n}$: interpolant and $\{x_{i}\}_{i=1}^{n+1}$ are the interpolation points
@@ -70,13 +70,13 @@ y_{2}
 \end{pmatrix}
 $$
 Explicit Solution:
-$$
+$$ \large
 P_{1}(x) = \underbrace{ \left( y_{1} - \frac{y_{2}- y_{1}}{x_{2}-x_{1}}x_{1} \right) }_{ a_{0} }+ \underbrace{ \left( \frac{y_{2}-y_{1}}{x_{2}-x_{1}}x \right) }_{ a_{1} } = y_{1} + \left( \frac{y_{2}- y_{1}}{x_{2}-x_{1}} \right)(x-{x_{1}})
 $$
 ***General Case***:
 - Assume $x_{1}, x_{2}\dots x_{n+1}$ are distinct
 - Find $P_{n}(x) = a_{0}+a_{1}x + \dots a_{n}x^n$ such that:
-$$
+$$ \large
 \begin{cases}
 P_{n}(x_{1}) = a_{0}+a_{1}x_{1} + \dots a_{n}x_{1}^n = y_{1}\\
 P_{n}(x_{n+1}) = a_{0}+a_{1}x_{n+1} + \dots a_{n}x_{n+1}^n = y_{n+1}
@@ -111,7 +111,7 @@ $$
 P_{n}(x) = P_{n}(x) = a_{0}+a_{1}x + \dots a_{n}x^n 
 $$
 Starting with n = 1, we get 2 FLOPs,
-$$
+$$\large
 a_{0} \underbrace{ + }_{ 1+ } \underbrace{ a_{1}x }_{ 1x }
 $$
 =>n=2: 3 additional flops
@@ -161,8 +161,8 @@ Therefore: $g'$ has at least 3 roots
 Let $\xi \in [a, b]$ s.t. $g'''(\xi) = 0$
 =>$$
 \begin{align}
-g'''(\xi) = f'''(\xi) - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}3! = 0 \\
+g'''(\xi) = f'''(\xi) - \frac{f(x)-p_{2}(x)}{(x-x_{1})(x-x_{2})(x-x_{3})}3! &= 0 \\
 |f(x) - P_{2}(x)| = \frac{1}{3!}\underbrace{ |f'''(\xi)| }_{ \leq \max_{S \in[a, b]}|f^{'''}(si)| }\underbrace{ |(x-x_{1})(x-x_{2})(x-x_{3})| }_{ \leq (b-a)^3 } \\
 |f(x) - P_{2}(x)| \leq \frac{1}{3!} \max_{S \in[a, b]}|f^{(3)}|(b-a)^3
 
-\end{align}$$ As required
+\end{align}$$
