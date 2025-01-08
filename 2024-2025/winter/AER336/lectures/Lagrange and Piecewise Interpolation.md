@@ -150,5 +150,5 @@ $$
 =>$\log(e) \leq \log(C)+ \underbrace{ (p+1) }_{ slope }\log(h)$
 Which makes sense, since $p+1$ is the convergence rate
 
-## Spline Interpolation
+### Spline Interpolation
 Save for next lecture
