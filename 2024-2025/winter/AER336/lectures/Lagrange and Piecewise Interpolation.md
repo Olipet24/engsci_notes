@@ -77,4 +77,35 @@ $$
 |f(x)-P_{n}(x)| = \frac{1}{(n+1)!} |f^{(n+1)}(\xi)|\underbrace{ |\prod_{i=j}^{n+1} (x-x_{i})| }_{ \text{ Chebyshev nearly mininmizes this} }
 $$
 
-However, the issue is that Chebyshev nodes is not very practical, since it requires you having the ability to choose where you want the measurement points to be
+However, the issue is that Chebyshev nodes is not very practical, since it requires you having the ability to choose where you want the measurement points to be.
+- Possible solution is to use piecewise interpolation
+
+## Piecewise Polynomial Interpolation (Lecture 1)
+
+### Piecewise linear interpolation
+- Basically have straight lines connecting each interpolation point
+
+Given $x_{1} < x < x_{2}<\dots<x_{n+1}$, introduce n segments:
+$$
+S_{k} = [x_{k}, x_{k+1}], k = 1, 2, \dots, n
+$$
+Define $h \equiv x_{k+1} - x_{k}$
+
+Over each $S_{k}$, introduce $$P_{h,1}^{(k)}(x) = a_{0}^k +a_{1}^k x$$
+s.t.
+$$
+\begin{cases}
+P_{n,1}^{(k)}(x_{k}) = y_{k} \\
+P_{n,1}^{(k)}(x_{k+1})= y_{k+1}
+\end{cases}
+$$
+where subscript is segment length, and polynomial degree. Superscript is segment \#
+
+Global function:
+$$
+P_{n,1}(x)= \begin{cases}
+P_{n,1}^{(k=1)}, & x \in S_{1} \\
+ & \vdots \\
+P_{n,1}(x)^{(k=n)}, & x \in S_{n}
+\end{cases}
+$$
