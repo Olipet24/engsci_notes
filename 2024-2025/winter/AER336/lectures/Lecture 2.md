@@ -26,9 +26,9 @@ l_{j}(x_{i})=\begin{cases}
 \end{cases}
 
 $$
-e.g
+e.g.
 $$
-l_{1}(x) = \frac{(x-x_{2})(x-x_{3})}{(x_{1}-x_{2})(x_{1}-x_{2}) } \frac{\leftarrow\text{ 2 roots and degree 2 }}{\leftarrow \text{ normalization }}
+l_{1}(x) = \frac{(x-x_{2})(x-x_{3})}{(x_{1}-x_{2})(x_{1}-x_{3}) } \frac{\leftarrow\text{ 2 roots and degree 2 }}{\leftarrow \text{ normalization }}
 $$
 Denominator is Normalization, and the numerator is 2 roots and 2 degree polynomial
 
@@ -70,11 +70,11 @@ $$
 $$
 x_i = \cos\left( \frac{(i-1)}{n} \pi\right) 
 $$
-I.e. points cluster at the end of the interval
+I.e. points cluster at the ends of the interval
 
 **Derivation**:
 $$
-|f(x)-P_{n}(x)| = \frac{1}{(n+1)!} |f^{(n+1)}(\xi)|\underbrace{ |\prod_{i=1}^{n+1} (x-x_{i})| }_{ \text{ Chebyshev nearly mininmizes this} }
+|f(x)-P_{n}(x)| = \frac{1}{(n+1)!} |f^{(n+1)}(\xi)|\underbrace{ |\prod_{i=j}^{n+1} (x-x_{i})| }_{ \text{ Chebyshev nearly mininmizes this} }
 $$
 
 However, the issue is that Chebyshev nodes is not very practical, since it requires you having the ability to choose where you want the measurement points to be
