@@ -98,4 +98,23 @@ Key assumption in ==Cauchy Stress==: infinitesimal element cannot carry a moment
 Cauchy Stress:
 ![[Pasted image 20250107204634.png]]
 
-The faces $dS_{1}, dS_{2}, dS_{3}$ all have one nromal 
+The faces $dS_{1}, dS_{2}, dS_{3}$ all have one normal stress and two shear stress components (all oriented with the coord axis)
+
+The largest face, $dS$, has unit normal $\nu$ and traction $T^\nu$ (with three components, which are parallel with the coordinate axis (no normal/coplanar to the surface)).
+
+Force Equilibrium in the $x_{1}$ direction:
+$$
+T_{1}^\nu dS = \sigma_{11} +dS_{1} + \sigma_{21} dS_{2} + \sigma_{31} dS_{3}
+\label{1}\tag{1}
+$$In addition, the unit normal $\nu$ has components:
+$$
+\nu_{1} =\cos \theta_{i}, i = 1,2,3
+$$Where $\theta_{i}$ is defined by the orientation of the the plane $dS$
+
+The areas of the smaller faces are defined by:
+$$
+dS_{i} = \cos \theta_{i} dS, i = 1,2,3
+$$
+Cauchy's Formula relates surface tractions to stress states inside a body: serves as fundamental definition of stress (also crucial for BVPs)
+
+Thus from the above equation
