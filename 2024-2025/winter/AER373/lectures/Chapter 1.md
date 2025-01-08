@@ -77,3 +77,9 @@ Superscript says that traction vector acts on outward unit normal $\nu$.
 ![[Pasted image 20250107202848.png]]
 
 Consider a surface S in a solid material subjected to arbitrary loads (S can be internal or on the boundary of body).
+
+$\Delta S$ is a region of surface that defines a volume with very small thickness $\delta$.
+
+$T^{(+)}$ and $T^{(-)}$ define tractions acting on opposite side of the volume. As $\delta \to 0$, body forces and forces on the side go to 0 (because volume and area on the sides go to 0).
+
+Thus, if $\Delta$
