@@ -105,7 +105,6 @@ The largest face, $dS$, has unit normal $\nu$ and traction $T^\nu$ (with three c
 Force Equilibrium in the $x_{1}$ direction:
 $$
 T_{1}^\nu dS = \sigma_{11} +dS_{1} + \sigma_{21} dS_{2} + \sigma_{31} dS_{3}
-\label{1}\tag{1}
 $$In addition, the unit normal $\nu$ has components:
 $$
 \nu_{1} =\cos \theta_{i}, i = 1,2,3
@@ -117,4 +116,26 @@ dS_{i} = \cos \theta_{i} dS, i = 1,2,3
 $$
 Cauchy's Formula relates surface tractions to stress states inside a body: serves as fundamental definition of stress (also crucial for BVPs)
 
-Thus from the above equation
+Thus from the force equilibrium and the unit normal equation we get:
+$$
+\begin{align}
+T_{1}^\nu = \sigma_{11}\nu_{1} + \sigma_{21}\nu_{2}+\sigma_{31}\nu_{3}\\
+T_{2}^\nu = \sigma_{12}\nu_{1} + \sigma_{22}\nu_{2}+\sigma_{32}\nu_{3} \\
+T_{3}^\nu = \sigma_{13}\nu_{1} + \sigma_{23}\nu_{2}+\sigma_{33}\nu_{3}
+\end{align}
+
+$$
+Which can be represented in a matrix:
+$$
+\begin{bmatrix}
+T_{1}^\nu \\
+T_{2}^\nu \\
+T_{3}^\nu
+\end{bmatrix}= \begin{bmatrix}
+\sigma_{11} & \sigma_{21} & \sigma_{31} \\
+\sigma_{12} & \sigma_{22} & \sigma_{32} \\
+\sigma_{13} & \sigma_{23} & \sigma_{33}
+\end{bmatrix} \begin{bmatrix}
+
+\end{bmatrix}
+$$
