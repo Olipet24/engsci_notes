@@ -28,11 +28,31 @@ l_{j}(x_{i})=\begin{cases}
 $$
 e.g
 $$
-l_{1}(x) = \frac{(x-x_{2})(x-x_{3}) \leftarrow\text{ 2 roots and degree 2 }}{(x_{1}-x_{2})(x_{1}-x_{2}) \leftarrow \text{ normalization }}
+l_{1}(x) = \frac{(x-x_{2})(x-x_{3})}{(x_{1}-x_{2})(x_{1}-x_{2}) } \frac{\leftarrow\text{ 2 roots and degree 2 }}{\leftarrow \text{ normalization }}
 $$
 Denominator is Normalization, and the numerator is 2 roots and 2 degree polynomial
 
 Then $P_{n=2}(x) = y_{1}l_{1}(x)+y_{2}l_{2}(x)+y_{3}l_{3}(x)$
 
 **Q**: Is the above a polynomial interpolant?
-- Poly
+- Polynomial of degree 2
+- interpolation conditions: $P_{2}(x)= y_{1}l_{1}(x_{1}) + \cancelto{ 0 }{ y_{2}l_{2}(x_{1}) } + \cancelto{ 0 }{ y_{3}l_{3}(x_{1}) } = y_{1}$
+
+**Q**: Is $P_{n=2}^{\text{lagrage}}(x)= P_{n=2}^{\text{Vandermonde}}(x)$? => Yes
+
+### Generalization
+
+degree n polynomials $\{l_{j}\}_{j=1}^{n+1}$ s.t. 
+$$
+l_{j}(x_{j})= \begin{cases}
+1 & \text{if } i=j \\
+0 & \text{if } i \neq j
+\end{cases}
+$$
+is give by
+$$
+l_{j}(x) = \prod_{1 \leq k \leq n+1, k\neq j } \frac{x-x_{k}}{x_{j}-x_{k}}, j = 1, \dots n+1
+$$
+**Notes**:
+1. no linear system to solve
+2. $P_{n}^\text{lag}(x) = P_{n}^{\text{Vandermonde}}$ => some error analysis
