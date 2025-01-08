@@ -127,6 +127,9 @@ Thus, total cost for $P_{n}(x): 3n - 1 \sim O(n)$ FLOPs
 2. Solve linear system: $O(n^3)$ FLOPs
 
 #### Error Analysis: How accurate is our interpolant?
+
+^ae6b86
+
 Assumptions:
 1. $a \equiv x_{1} < x_{2}< \dots < x_{n_{1}} \equiv b$
 2. $f$ is smooth (more precisely $f^{n+1}$ is continuous)

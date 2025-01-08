@@ -111,6 +111,7 @@ P_{n,1}^{(k=n)}(x), & x \in S_{n}
 $$
 ### Evaluation of $P_{n,1}(x)$
 1. Find $k^*$ s.t. $x \in S_{k^*}$ (non-equispaced use bisection method ($O(\log_{2}(N))$))
+	1. Envision all the segments as being in a sorted list
 2. Evaluate $P_{n,1}^{(k^*)}(x)$
 
 ### Piecewise degree-p polynomial interpolation
@@ -128,7 +129,7 @@ $$
 **Note**: This does guarantee better error then linear piecewise polynomial
 
 ### Error Analysis
-- Apply previous analysis to each segment: [[Introduction_interpolation#^ef6d8a]]
+- Apply previous analysis to each segment: [[Introduction_interpolation#^ae6b86]]
 - Assumptions:
 	- $f$ is smooth on each $S_{k}$
 	- $N$ equispaced segments
@@ -141,3 +142,13 @@ $$
 2. For a fixed $h$, if $|f^{(p+1)}|h^{p+1}$ grows slower than $(p+1)!$, then error converges with $p$
 3. For a fixed $p$, error converges as $h^{p+1}$, where $p+1$ is the convergence rate
 
+Looking at the error diagram, the slope can be defined as:
+$$
+\underbrace{ |f(x)- P_{n,p}(x) | }_{ e }\leq \underbrace{ \frac{1}{(p+1)!} \max_{S \in {a, b}}|f^{(p+1)} }_{ C }|h^{p+1}
+$$
+=> $e \leq Ch^{p+1}$
+=>$\log(e) \leq \log(C)+ \underbrace{ (p+1) }_{ slope }\log(h)$
+Which makes sense, since $p+1$ is the convergence rate
+
+## Spline Interpolation
+Save for next lecture
