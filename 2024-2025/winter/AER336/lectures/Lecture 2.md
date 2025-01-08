@@ -51,8 +51,13 @@ l_{j}(x_{j})= \begin{cases}
 $$
 is give by
 $$
-l_{j}(x) = \prod_{1 \leq k \leq n+1, k\neq j } \frac{x-x_{k}}{x_{j}-x_{k}}, j = 1, \dots n+1
+l_{j}(x) = \prod_{\substack{1 \leq k \leq n+1 \\ k\neq j }} \frac{x-x_{k}}{x_{j}-x_{k}}, j = 1, \dots n+1
 $$
 **Notes**:
 1. no linear system to solve
 2. $P_{n}^\text{lag}(x) = P_{n}^{\text{Vandermonde}}$ => some error analysis
+
+### Runge's Phenomenon
+- oscillation that polynomial interpolants exhibit for some functions when equispaced interpolation points are used
+- e.g. Runge's Function $f(x) = \frac{1}{1+25^2}, x\in[-1, 1]$
+	- smooth but $|f(x)- P_{n}(x)| \cancel{ \to } 0$ as $n \to \infty$
