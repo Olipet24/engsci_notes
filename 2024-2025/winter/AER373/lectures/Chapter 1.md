@@ -131,11 +131,11 @@ $$
 T_{1}^\nu \\
 T_{2}^\nu \\
 T_{3}^\nu
-\end{bmatrix}= \begin{bmatrix}
+\end{bmatrix}= \underbrace{ \begin{bmatrix}
 \sigma_{11} & \sigma_{21} & \sigma_{31} \\
 \sigma_{12} & \sigma_{22} & \sigma_{32} \\
 \sigma_{13} & \sigma_{23} & \sigma_{33}
-\end{bmatrix} \begin{bmatrix}
+\end{bmatrix} }_{ \text{definition of stress} }\begin{bmatrix}
 \nu_{1} \\
 \nu_{2} \\
 \nu_{3}
@@ -145,3 +145,4 @@ In vector notation:
 $$
  \vec{T}^\nu = \vec{\sigma}^T\nu
 $$
+Cauchy
