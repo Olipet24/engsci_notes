@@ -145,4 +145,10 @@ In vector notation:
 $$
  \vec{T}^\nu = \vec{\sigma}^T\nu
 $$
-Cauchy
+Cauchy model of stress in continuum solid mech. employs two fundamental assumptions:
+- Stress is  cont., single valued fcn. expressed as a s second order tensor, that can be defined at any point in a body, not an eqn. avg.
+- An infinitesimal element of material can transmit normal and sheer stresses but not moments: Cauchy Stress 
+
+Discontinuities sometimes arise, for instance during fracture; must be treated separately.
+
+Stress analysis deals with **continua** and not real physical materials: consider the difference between an atom and a material point.
