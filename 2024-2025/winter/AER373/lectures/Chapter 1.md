@@ -136,6 +136,12 @@ T_{3}^\nu
 \sigma_{12} & \sigma_{22} & \sigma_{32} \\
 \sigma_{13} & \sigma_{23} & \sigma_{33}
 \end{bmatrix} \begin{bmatrix}
-
+\nu_{1} \\
+\nu_{2} \\
+\nu_{3}
 \end{bmatrix}
+$$
+In vector notation:
+$$
+ \vec{T}^\nu = \vec{\sigma}^T\nu
 $$
