@@ -97,3 +97,5 @@ Key assumption in ==Cauchy Stress==: infinitesimal element cannot carry a moment
 
 Cauchy Stress:
 ![[Pasted image 20250107204634.png]]
+
+The faces $dS_{1}, dS_{2}, dS_{3}$ all have one nromal 
