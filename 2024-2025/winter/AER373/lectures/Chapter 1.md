@@ -82,4 +82,18 @@ $\Delta S$ is a region of surface that defines a volume with very small thicknes
 
 $T^{(+)}$ and $T^{(-)}$ define tractions acting on opposite side of the volume. As $\delta \to 0$, body forces and forces on the side go to 0 (because volume and area on the sides go to 0).
 
-Thus, if $\Delta$
+Thus, if $\Delta S \to 0$, in equilibrium, then $$T^{(+)} = -T^{(-)}$$
+(since integrals of the tractions with w.r.t area must give equal forces in both directions, coupled with both of aforementioned conditions results in the above).
+
+#### General Description of Stress
+
+Infinitesimal Cube:
+![[Pasted image 20250107204337.png]]
+
+The general stress of the cube are given by:
+![[Pasted image 20250107204506.png]]
+
+Key assumption in ==Cauchy Stress==: infinitesimal element cannot carry a moment (unlike Cosserat Theory).
+
+Cauchy Stress:
+![[Pasted image 20250107204634.png]]
