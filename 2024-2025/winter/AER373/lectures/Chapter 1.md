@@ -55,4 +55,4 @@ Arbitrary Stressed Body
 Two types of forces in solid mech: Body forces or surface tractions
 
 **Body Forces**: arise due to distribution of mass (gravity) or charge (EM) throughout body
-- consequence of volume and distribution of the appropriate physical characteristic throughout that volume
+- function of volume and distribution of the appropriate physical characteristic throughout volume
