@@ -5,7 +5,7 @@
 
 **Cost**: how much computational effort is required to provide approximation (FLOP)
 
-**Accuracy/Error Analysis**: How closely does our (discrete) approximation estimate the exact (continuous) solution?
+**Accuracy/Error Analysis**: How closely does our (discrete) approximation estimate the exact (continuous) solution? ^ef6d8a
 - How can we characterize this system?
 
 **Goal**: We desire algorithms that achieve:

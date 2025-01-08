@@ -106,7 +106,7 @@ $$
 P_{n,1}(x)= \begin{cases}
 P_{n,1}^{(k=1)}, & x \in S_{1} \\
  & \vdots \\
-P_{n,1}(x)^{(k=n)}, & x \in S_{n}
+P_{n,1}^{(k=n)}(x), & x \in S_{n}
 \end{cases}
 $$
 ### Evaluation of $P_{n,1}(x)$
@@ -125,3 +125,19 @@ s.t.
 $$
 P_{h,p}^{(k)}(x_{i}^{(k)}) = y_{i}^{(k)}, i = 1, \dots,p+1
 $$
+**Note**: This does guarantee better error then linear piecewise polynomial
+
+### Error Analysis
+- Apply previous analysis to each segment: [[Introduction_interpolation#^ef6d8a]]
+- Assumptions:
+	- $f$ is smooth on each $S_{k}$
+	- $N$ equispaced segments
+$$
+|f(x)- P_{n,p}(x) |\leq \frac{1}{(p+1)!} \max_{S \in {a, b}}|f^{(p+1)}|h^{p+1}
+$$
+
+**Observations**:
+1. error depends on $f^{p+1}, p, \text{\& } h$
+2. For a fixed $h$, if $|f^{(p+1)}|h^{p+1}$ grows slower than $(p+1)!$, then error converges with $p$
+3. For a fixed $p$, error converges as $h^{p+1}$, where $p+1$ is the convergence rate
+
