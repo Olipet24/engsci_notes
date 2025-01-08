@@ -63,4 +63,17 @@ Two types of forces in solid mech: Body forces or surface tractions
 
 Consider arbitrary 3D body, B, with closed 2D surface S
 
-Subsurface of area $\Delta S$ with outward-pointing surface unit normal vector $$
+Subsurface of area $\Delta S$ with outward-pointing surface unit normal vector $\nu$ has force $\Delta F$ acting upon it (not necessarily normal to $\Delta S$).
+
+As $\Delta S \to 0$. so does $\Delta F \to 0$, but not their ratio.
+
+Thus, Surface traction vector is: $T^\nu = \frac{\partial \vec{F}}{\partial S}$ \[Pa]
+
+Superscript says that traction vector acts on outward unit normal $\nu$.
+
+**Note**: Traction is not a force.
+
+#### Tractions across a Surface
+![[Pasted image 20250107202848.png]]
+
+Consider a surface S in a solid material subjected to arbitrary loads (S can be internal or on the boundary of body).
