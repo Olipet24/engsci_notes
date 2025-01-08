@@ -61,3 +61,20 @@ $$
 - oscillation that polynomial interpolants exhibit for some functions when equispaced interpolation points are used
 - e.g. Runge's Function $f(x) = \frac{1}{1+25^2}, x\in[-1, 1]$
 	- smooth but $|f(x)- P_{n}(x)| \cancel{ \to } 0$ as $n \to \infty$
+
+### Chebyshev nodes
+
+***Idea***: use non-equispaced nodes
+
+**Def**: Chebyshev nodes for $[-1, 1]$
+$$
+x_i = \cos\left( \frac{(i-1)}{n} \pi\right) 
+$$
+I.e. points cluster at the end of the interval
+
+**Derivation**:
+$$
+|f(x)-P_{n}(x)| = \frac{1}{(n+1)!} |f^{(n+1)}(\xi)|\underbrace{ |\prod_{i=1}^{n+1} (x-x_{i})| }_{ \text{ Chebyshev nearly mininmizes this} }
+$$
+
+However, the issue is that Chebyshev nodes is not very practical, since it requires you having the ability to choose where you want the measurement points to be
