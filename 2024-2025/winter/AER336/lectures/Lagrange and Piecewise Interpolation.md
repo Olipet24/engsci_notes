@@ -80,7 +80,7 @@ $$
 However, the issue is that Chebyshev nodes is not very practical, since it requires you having the ability to choose where you want the measurement points to be.
 - Possible solution is to use piecewise interpolation
 
-## Piecewise Polynomial Interpolation (Lecture 1)
+## Piecewise Polynomial Interpolation (Lecture 2)
 
 ### Piecewise linear interpolation
 - Basically have straight lines connecting each interpolation point
@@ -99,7 +99,7 @@ P_{n,1}^{(k)}(x_{k}) = y_{k} \\
 P_{n,1}^{(k)}(x_{k+1})= y_{k+1}
 \end{cases}
 $$
-where subscript is segment length, and polynomial degree. Superscript is segment \#
+where subscript is segment length, and polynomial degree. Superscript is segment \#. These $P_{n,1}^{(k)}$ can be found through Vandermonde or Lagrange mthd.
 
 Global function:
 $$
@@ -108,4 +108,20 @@ P_{n,1}^{(k=1)}, & x \in S_{1} \\
  & \vdots \\
 P_{n,1}(x)^{(k=n)}, & x \in S_{n}
 \end{cases}
+$$
+### Evaluation of $P_{n,1}(x)$
+1. Find $k^*$ s.t. $x \in S_{k^*}$ (non-equispaced use bisection method ($O(\log_{2}(N))$))
+2. Evaluate $P_{n,1}^{(k^*)}(x)$
+
+### Piecewise degree-p polynomial interpolation
+- Basically fit a degree p polynomial between each point
+	- This means that each segment might have more than one nodes in it
+	- i.e. $x^{(\text{segment number})}_{\text{node number}}$
+As before:
+$$
+P_{h, p}^{(k)} = \sum_{j=0}^P a_{j}^{(k)}x^j
+$$
+s.t.
+$$
+P_{h,p}^{(k)}(x_{i}^{(k)}) = y_{i}^{(k)}, i = 1, \dots,p+1
 $$
