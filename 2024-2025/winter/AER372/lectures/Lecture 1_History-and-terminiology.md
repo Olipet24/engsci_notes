@@ -101,10 +101,14 @@ $u = 10(r-y_{cl})$
 => $y_{cl} = 10[10(r-y_{cl}) - 0.5w] = 100r - 100y_{cl}-5w$
 
 Solving for $y_{cl}$:
-$101y_{cl} = 100$
-
-
-
+$101y_{cl} = 100r - 5w$ =>$y_{cl} = \frac{100}{101}r- \frac{5}{101}w$
+- Disturbance, $w$ is mitigated by the factor
+- Even with 0 disturbance, there is a steady state error, can only reach $\frac{100}{101}r = 0.99r$
+To account for this steady state error, we can increase the open loop gain term
+i.e. if gain is 100: $y_{cl} = \frac{1000}{1001}r - \frac{5}{1001}w$
+- effect of $w$ is further reduced
+- we can now reach $99.9\% \text{ of } r$
+However increasing the open loop gain causes troubles with system stability and transient response of the system.
 
 **Note:** Robustness: Regulation & sensitivity
 - Regulation of its disturbances
