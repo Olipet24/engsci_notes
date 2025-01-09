@@ -231,21 +231,34 @@ A tensor can be expressed as an array or matrix of quantities which depend upon 
 
 zeroe'th order tensors are like scalars; first order are like vectors; second orders are like matrices
 #### Tensor Transformations
-the key definition of a tensor is that it transforms in a particularly way when the reference coord system is rotated from $O$ to $O^1$
+the key definition of a tensor is that it transforms in a particularly way when the reference coord system is rotated from $O$ to $O^1$, using direction cosines:
+- zeroeth order: $\phi^1 = \phi$
+- first order: $f_{i}^1 = l_{ij}f_{j}$
+- Second order: $A_{ij}^1 = l_{ik}l_{jl}A_{kl}$
 
-zeroeth order: $\phi^1 = \phi$
-first order: $f_{i}^1 = l_{ij}f_{j}$
-Second order: $A_{ij}^1 = l_{ik}l_{jl}A_{kl}$
+**Direction Cosine** cosine of smallest angle between two different directions
 
 if the components of a physical phenomenon do not transform ths way under rotations, then the physical phenomenon does not have tensorial characteristics
 
-if a transformation, constant and orthogonal, for a rotation of $O^1$ around w.r.t to $O$ axes, it is called cartesian
+if a transformation, constant and orthogonal, for a rotation of $O^1$ around w.r.t to $O$ axes, it is called cartesian.
 
 ##### Special Tensors
 
 **Kronecker's Delta Tensor**
 ![[Pasted image 20250109153043.png]]
-similar to 
+similar to Identity matrix
+$\delta_{ij} a_{jk} = a_{ik}$
+**Levi-Cevita (Permutation tensor)**
+![[Pasted image 20250109153143.png]]
+An even permutation is clockwise, where i,j,k are put in a circle sorted by increasing order clockwise
+
+Cross product $a = b \times c$ can be represented by:
+$a_{i} = e_{ijk}b_{j}c_{k}$
+
+
+#### Differentiation of Tensors
+
+
 #### Calculation of Cauchy true stress
 
 Calculating the stress of a cylinder being pulled coaxially
