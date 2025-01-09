@@ -35,7 +35,7 @@ Stress induces a strain:
 $$
 \epsilon = \frac{\sigma}{E}
 $$
-=>Poisson's Ratio?
+=>Poisson's Ratio: tells you the ratio of transverse strain to longitudinal strain
 
 ### Analyzing Cantilever Beam
 
@@ -206,8 +206,7 @@ The above calculations that are not tensors are operations can be performed, but
 
 ### The Cauchy Stress Tensor
 
-**Tensor** a repre
-- stress has a physical meaning phenomenon
+Stress represented by mathematical object, tensor:
 $$
 \begin{bmatrix}
 \sigma_{11} & \sigma_{21} & \sigma_{31} \\
@@ -221,8 +220,33 @@ $$
 $$
 The stress tensor allows for the determination of traction at a point for any surface orientation
 - therefore stress is a field, and varies continously with position, stress => field theory
+**Tensor** a representation of a physical phenomenon with is invariant with respect to ==changing frames== of ==reference and basis vectors== in a the particular space in which it exists
+- mathematical representation of how we understand the world to work
+- stress has a physical meaning phenomenon
+- need to obey Galilean principle of invariance: needs to appear the same physically the same to multiple observers
 
-****
+#### Calculation of Cauchy true stress
+
+Calculating the stress of a clind being pulled coaxially
+
+$\sigma_{0} = \frac{P}{A_{0}}$
+$A_{0}=\pi r_{0}^2$
+$\sigma = frac{ P}{A}$
+$A = \pi r^2$
+$r = (1+e_{r})r_{0}$
+$e_{r} =-\nu e_{z}$
+$e_{z} = \frac{\sigma}{E}$
+so: $\sigma = \frac{P}{\pi\left( 1-\frac{\nu \sigma}{E} \right)^2r_{0}^2}$
+==Thus==
+$\frac{\sigma}{\sigma_{0}} = \left( \frac{E}{E-\nu \sigma} \right)^2$
+
+However, consider that $\sigma_{max} = 0.01 E, \nu = 0.3$
+
+Thus from the above equation we get 1.006
+That is a 0.6 percent difference at maximum
+
+
+
 ## Strength of Materials
 
 **Note:** it is important to draw FBD for problems
