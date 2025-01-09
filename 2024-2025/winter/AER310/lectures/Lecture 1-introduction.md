@@ -35,7 +35,7 @@ $$
 For air under STP conditions at altidue of 130 km, number density lower then sea level => $\lambda = 10.2 \text{ m}$
 Thus continuum only valid for $l > 10^3 \text{ m}$
 
-#### Definition of Compressibility
+### Definition of Compressibility
 
 **Compressibility** (coeff. of compressibility), $\beta$: measure of realitve volume change of fluid element in response to application in change of pressure:
 $$
@@ -68,3 +68,29 @@ From thermo, if we assume that $\nu = \nu(T, s)$ or $\rho = \rho(T, s)$ and $p =
 The first term is iso thermal, and the second is isotropic
 
 ![[Pasted image 20250109165740.png]]
+
+The former defines compressibility for processes in which the temp remains const. and the other for reverse adiabatic compressions (no heat is added to taken away from fluid element)
+
+For water under STP conditions (1 atm)
+$$
+\beta_{T} = 5 \times 10^{-10} \frac{\text{m}^2}{\text{N}}
+$$
+for air:
+$$
+\beta_{T} = 10 \times 10^{-5} \frac{\text{m}^2}{\text{N}}
+$$
+Thus gas is *far more* compressible then liquid
+
+### Flow regimes
+- defined by mach number:
+$$
+M = \frac{V}{A}
+$$
+where $V$ is the flow velocity and $a$ is the speed of sound for the gas or speed of sound speed. The formal definition of the sound speed is as follows:
+$$
+a^2 \equiv \left( \frac{\partial p}{\partial \rho} \right)_{s}
+$$
+Since the speed of sound can be related to the isentorpic compressibility as follows:
+$$
+a^2 = \frac{1}{\rho \beta_{s}}
+$$
