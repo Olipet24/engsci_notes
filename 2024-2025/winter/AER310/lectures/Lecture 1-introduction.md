@@ -37,5 +37,34 @@ Thus continuum only valid for $l > 10^3 \text{ m}$
 
 #### Definition of Compressibility
 
-**Compressibility** (coeff. of compressibility), $\beta$
+**Compressibility** (coeff. of compressibility), $\beta$: measure of realitve volume change of fluid element in response to application in change of pressure:
+$$
+\beta \equiv -\frac{1}{\hat{\nu}} \frac{d\hat{\nu}}{d p}
+$$
+where $\nu$ is fluid volume, and $p$ is the pressure
+ if fluid element assume to have unit mass, then $\hat{\nu} = \nu$. and $\nu = \frac{1}{\rho}$ which is the spefic volume
+Thus
+$$
+\beta = -\frac{1}{\nu} \frac{d\nu}{d\rho}=\frac{1}{\rho} \frac{d\rho}{dp}
+$$
 
+where:
+$$
+\frac{d\nu}{d\rho} = -\frac{1}{\rho^2}
+$$
+
+Which can be rewritten to show that fluid experiences a change in pressure $dp$ the corresponding changes in specific vol $d\nu$ and density $d\rho$ will be
+$$
+d\nu = -\beta \nu dp
+$$
+and 
+$$
+d\rho=\beta \rho dp
+$$
+Compression of fluid is path dependent and change in the specific vol. will depend on the compression process. 
+From thermo, if we assume that $\nu = \nu(T, s)$ or $\rho = \rho(T, s)$ and $p = p(T,s)$, then we can write by using the chain rule:
+
+![[Pasted image 20250109165649.png]]
+The first term is iso thermal, and the second is isotropic
+
+![[Pasted image 20250109165740.png]]
