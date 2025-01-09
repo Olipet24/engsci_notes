@@ -230,7 +230,7 @@ A tensor can be expressed as an array or matrix of quantities which depend upon 
 **Note:** a tensor which is zero in one reference frame is zero in all reference frames
 
 zeroe'th order tensors are like scalars; first order are like vectors; second orders are like matrices
-
+#### Tensor Transformations
 the key definition of a tensor is that it transforms in a particularly way when the reference coord system is rotated from $O$ to $O^1$
 
 zeroeth order: $\phi^1 = \phi$
@@ -238,6 +238,14 @@ first order: $f_{i}^1 = l_{ij}f_{j}$
 Second order: $A_{ij}^1 = l_{ik}l_{jl}A_{kl}$
 
 if the components of a physical phenomenon do not transform ths way under rotations, then the physical phenomenon does not have tensorial characteristics
+
+if a transformation, constant and orthogonal, for a rotation of $O^1$ around w.r.t to $O$ axes, it is called cartesian
+
+##### Special Tensors
+
+**Kronecker's Delta Tensor**
+![[Pasted image 20250109153043.png]]
+similar to 
 #### Calculation of Cauchy true stress
 
 Calculating the stress of a cylinder being pulled coaxially
