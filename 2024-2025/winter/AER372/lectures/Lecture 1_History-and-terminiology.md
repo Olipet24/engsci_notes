@@ -69,9 +69,17 @@ Cons:
 - Can handle nonlinear input-output relationships
 
 #### Examples
-Example 1
+**Example 1**
 ![[Pasted image 20250106174301.png]]
 
-Example 2
+This control system use the On-Off technique
+- When the outside temperature gets below a certain threshold relative to the setpoint temp due to heat loss, the heating system turns on until temperature rises back to the temp set point
+
+**Example 2**
 ![[Pasted image 20250106174328.png]]
+
 ![[Pasted image 20250106174349.png]]
+
+**Note:** Robustness: Regulation & sensitivity
+- Regulation of its disturbances
+- Sensitivity to noise
