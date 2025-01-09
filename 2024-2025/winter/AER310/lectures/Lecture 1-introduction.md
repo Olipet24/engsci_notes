@@ -15,7 +15,27 @@ System of gas molecules in the room:
 #### Continuum treatment and gasdynamics
 - provided sufficien no. of intermolecular collisions, collection of gaseous particle near LTE (local thermodynamic equilibrium) can be treated as continuum
 	- in this case avg. macro properties is sufficient
-- measure of hi9gh inter-molecular collisional rates leading to near LTE provided by **Knudsen No.**:
+![[Pasted image 20250109164424.png]]
+- measure of high inter-molecular collisional rates leading to near LTE provided by **Knudsen No.**
  $$
-\text{Kn} = \frac{\text{}}{}
+\text{Kn} = \frac{\text{mean free path}}{\text{characteristic length}} = \frac{\lambda}{l}
 $$
+- non dimensional parameter which measures gas potential to maintain conditions of thermo equil.
+	- Lower no. allows for good continuum assumption (i.e $\text{Kn} \ll 1$ or $\text{Kn} < 0.1$)
+	- under normal conditions, the mean free path is 100-500 times the molecular diameter, and ratio of intermolecular seperate distance d, to the molecular diameter is of order 10. Thus mean free path is approx 10-50 times greater then mean molecular seperation distance
+Under STP conditions at sea level, the mean free path of air is:
+$$
+\lambda_{\text{air}} = 6.6 \times 10^{-8} \text{m}
+$$
+
+Thus, continuum treatment valid for:
+$$
+l > 6.6 \times 10^{-6} \text{m}
+$$
+For air under STP conditions at altidue of 130 km, number density lower then sea level => $\lambda = 10.2 \text{ m}$
+Thus continuum only valid for $l > 10^3 \text{ m}$
+
+#### Definition of Compressibility
+
+**Compressibility** (coeff. of compressibility), $\beta$
+
