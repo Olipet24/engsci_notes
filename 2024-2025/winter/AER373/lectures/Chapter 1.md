@@ -152,3 +152,35 @@ Cauchy model of stress in continuum solid mech. employs two fundamental assumpti
 Discontinuities sometimes arise, for instance during fracture; must be treated separately.
 
 Stress analysis deals with **continua** and not real physical materials: consider the difference between an atom and a material point.
+
+#### January 9th
+ Can also rewrite the vector notation in subscript notation:
+$$
+T_{i}^\nu = \sum_{j=1}^3\sigma_{ji}\nu_{j}, (i = 1,2,3)
+$$
+
+#### Subscript notation
+- Subscripts always refer to spatial dimensions i.e. $x_{1}$ is coord. axis in 1 direction, while $F_{1}$ is force in 1 direction
+- It is useful for groups of equations across multiple dimensions
+
+****
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Strength of Materials
+
+**Note:** it is important to draw FBD for problems
+- make sure to draw the free body diagrams large enough for use
+
+
+
