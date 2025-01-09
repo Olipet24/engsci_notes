@@ -320,7 +320,7 @@ $$
 b_{ij} = \frac{\partial a_{i}}{\partial x_{j}}
 $$
 
-##### Order changes
+##### Order changes with the differential
 gradient increases order of tensor
 $f_{ij} = A_{ij}$
 divergence decreases order of order of a tensor
