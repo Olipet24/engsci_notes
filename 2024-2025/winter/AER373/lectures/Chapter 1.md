@@ -319,13 +319,15 @@ what is $a_{i,j}$
 $$
 b_{ij} = \frac{\partial a_{i}}{\partial x_{j}}
 $$
+
+##### Order changes
 gradient increases order of tensor
 $f_{ij} = A_{ij}$
 divergence decreases order of order of a tensor
 $f_{i,i} = A_{i,i}$
 contraction operation reduces the order of a tensor
 $f_{i}g_{i}$ or $A_{ii} = 0$
-==add stuff here==
+
 
 #### What makes something a tensor
 
@@ -334,6 +336,13 @@ a tensor mus transform according to the rules stated previoously
 quotient rule is also a standard check, i $b_{i}, c_{i}$ are first order tensors:
 $A_{ij}b_{j} = c_{i}$
 then $A_{ij}$ is a second order tensor
+
+>*most importantly, physical phenomena can be represented by tensors because we define them to be so: tensorial qualities reflect our understanding of how mathematical objects represent the behaviour of the physical world*
+
+an example of a tensor is the cauchy stress
+
+**Note:** when using only orthogoal cartesian coords, tensors are relatively easy tp handle. Using coordinates for a general curvilenear system, basis must be specified explicitly. If all orthogonal, it is covariant, if not it is contravariant
+=> thus we stick to using only cartesian coordinate systems
 #### Calculation of Cauchy true stress
 
 Calculating the stress of a cylinder being pulled coaxially
