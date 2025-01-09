@@ -16,4 +16,12 @@ Can represent $Y(t)$ as vector with components:
 Example:
 ![[Pasted image 20250109103602.png]]
 
-in this case, static electrical systems do not have energy storag 
+**Note:** static systems do not have energy storage elements (capacitor, inductor, mass, spring, etc). (System with no memory)
+
+**Dynamic System** current output depends on past history as well as present input. Input changes state variables in time.
+![[Pasted image 20250109104605.png]]
+$X(t)$ is the state variables (as they differ with time). Note that $Y(t)$ also takes time, $t$, as a direct input.
+
+Some dynamic systems can be acausal (depend on future values of the input vector) i.e. stock market value depends on future revenue
+- Physical systems are causal, input dictates output
+- 
