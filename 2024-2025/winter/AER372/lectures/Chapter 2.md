@@ -1,5 +1,7 @@
 ## Terminology
+
 ![[Pasted image 20250109103229.png]]
+
 **System** A collection of components of interest, demarcated by a boundary interacting through certain physical principles (Device/Process/Plant. Consists of two important quantities
 - **System Parameters (C)** Properties that define the components of the system
 	- i.e. Mass, Resistance
@@ -24,4 +26,11 @@ $X(t)$ is the state variables (as they differ with time). Note that $Y(t)$ also 
 
 Some dynamic systems can be acausal (depend on future values of the input vector) i.e. stock market value depends on future revenue
 - Physical systems are causal, input dictates output
-- 
+### Example
+
+![[Pasted image 20250109105631.png]]
+
+**Note:** $y(t)$ has $t$ directly as a function of time, making this system dynamic??
+
+## System Models
+- A (simplified) representation (or abstraction of a (physical) system
