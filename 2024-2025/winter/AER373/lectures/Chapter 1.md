@@ -95,7 +95,7 @@ The general stress of the cube are given by:
 
 Key assumption in ==Cauchy Stress==: infinitesimal element cannot carry a moment (unlike Cosserat Theory).
 
-Cauchy Stress:
+## Cauchy Stress
 ![[Pasted image 20250107204634.png]]
 
 The faces $dS_{1}, dS_{2}, dS_{3}$ all have one normal stress and two shear stress components (all oriented with the coord axis)
@@ -163,24 +163,44 @@ $$
 - Subscripts always refer to spatial dimensions i.e. $x_{1}$ is coord. axis in 1 direction, while $F_{1}$ is force in 1 direction
 - It is useful for groups of equations across multiple dimensions
 
+#### Einstein Summation Convention
+We can rewrite the subscript notation as:
+$$
+T_{i}^\nu = \sum_{j=1}^3\sigma_{ji}\nu_{j} = \sigma_{ji}\nu_{j}
+$$
+
+
+In this case, we get the system of equations by replacing j with 1, 2, and 3
+
+Indices must be consitent when summing
+$$
+a_{ij} + b_{ij} = c_{ij}
+$$
+whereas
+$$
+a_{ij} + b_{ik} =\text{ not a tensor}
+$$
+
+as well, and index an appear at most twice in a ter:
+$$
+a_{ij}b_{jk}c_{kl} = d_{il}
+$$
+$i,l$ are called free indexes, they show up on both sides. The other inidices are called *dummy* indices
+Where as
+$$
+a_{ij}b_{ik}c_{il} = \text{ not a tensor}
+$$
+
+
+
+
+
+
 ****
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Strength of Materials
 
 **Note:** it is important to draw FBD for problems
 - make sure to draw the free body diagrams large enough for use
 
-
+==Insert FBD==
 
