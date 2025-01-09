@@ -236,6 +236,8 @@ the key definition of a tensor is that it transforms in a particularly way when 
 zeroeth order: $\phi^1 = \phi$
 first order: $f_{i}^1 = l_{ij}f_{j}$
 Second order: $A_{ij}^1 = l_{ik}l_{jl}A_{kl}$
+
+if the components of a physical phenomenon do not transform ths way under rotations, then the physical phenomenon does not have tensorial characteristics
 #### Calculation of Cauchy true stress
 
 Calculating the stress of a cylinder being pulled coaxially
