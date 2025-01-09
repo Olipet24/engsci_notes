@@ -172,7 +172,7 @@ $$
 
 In this case, we get the system of equations by replacing j with 1, 2, and 3
 
-Indices must be consitent when summing
+Indices must be consistent when summing
 $$
 a_{ij} + b_{ij} = c_{ij}
 $$
@@ -181,20 +181,46 @@ $$
 a_{ij} + b_{ik} =\text{ not a tensor}
 $$
 
-as well, and index an appear at most twice in a ter:
+as well, and index an appear at most twice in a term when doing products:
 $$
 a_{ij}b_{jk}c_{kl} = d_{il}
 $$
-$i,l$ are called free indexes, they show up on both sides. The other inidices are called *dummy* indices
+$i,l$ are called free indexes, they show up on both sides. The other indices are called *dummy* indices
 Where as
 $$
 a_{ij}b_{ik}c_{il} = \text{ not a tensor}
 $$
+The above calculations that are not tensors are operations can be performed, but might not be typically be used to describe physical phenomena
 
+**Examples**
+1. $a_ib_{ij} = c_{j}$
+2. $a_{i}b_{jk} = c_{ijk}$
+3. $a_{ij}b_{jk}c_{kl}d_{l} = e_{i}$
+4. $a_{i} + b_{i} = c_{i}$
+5. $a_{ij} + b_{ij} = c_{ij}$
+6. $a_{ij}b_{jk}c_{jk} = \text{not a tensor}$
+7. $a_{ij}b_{jk}c_{kk} = \text{ not  a tensor}$
+8. $a_{ij}+b_{jk} = \text{not a tensor}$
+9. $a_{ij}b_{ijk}a_{kl} + b_{mnn} = \text{not a tensor}$
+10. $a_{ij}b_{jk} +c_{ik}d_{jk} = \text{not a tensor}$
 
+### The Cauchy Stress Tensor
 
-
-
+**Tensor** a repre
+- stress has a physical meaning phenomenon
+$$
+\begin{bmatrix}
+\sigma_{11} & \sigma_{21} & \sigma_{31} \\
+\sigma_{12} & \sigma_{22} & \sigma_{32} \\
+\sigma_{13} & \sigma_{23} & \sigma_{33}
+\end{bmatrix}
+$$
+or 
+$$
+\sigma_{ij}
+$$
+The stress tensor allows for the determination of traction at a point for any surface orientation
+- therefore stress is a field, and varies continously with position, stress => field theory
 
 ****
 ## Strength of Materials
