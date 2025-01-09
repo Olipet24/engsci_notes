@@ -82,11 +82,29 @@ This control system use the On-Off technique
 Controls the amount of gas intake in the car to control the speed of the car
 For every degree of throttle change, we increase the speed by 10 mph.
 
+***Open Loop Controller***
 A disturbance to the system is the Road Grade (slope): Every 1% road grade changes speed by 5mph (-ve sign on the second control diagram shows that increase in road grade leads to *decrease* in speed).
 - Use Dynamics to take in to effect that it takes time for the system to change; not an instantaneous process
-- 
+The bottom Open loop equation for the third diagram, without any disturbance (w = 0)
+- Since the controllers gain is the exact inverse of the plant's (throttle) gain
+- r is  the desired speed, and $y_{ol}$ is the control system
+$y_{ol} = 10(u - 0.5w) = -10\left( \frac{1}{10} r - 0.5w \right) = r-5w$
+- Demonstrates that open loop system cannot handle *Disturbances*, but does provide accurate result without it
+
+Error: (desired - real): $e = r- y_{ol} = 5w$ 
+$e\% = \frac{e}{r} = \frac{5w}{r} \%$
 
 ![[Pasted image 20250106174349.png]]
+***Closed Loop Controller***
+$y_{cl} = -10(u - 0.5 w)$
+$u = 10(r-y_{cl})$
+=> $y_{cl} = 10[10(r-y_{cl}) - 0.5w] = 100r - 100y_{cl}-5w$
+
+Solving for $y_{cl}$:
+$101y_{cl} = 100$
+
+
+
 
 **Note:** Robustness: Regulation & sensitivity
 - Regulation of its disturbances
