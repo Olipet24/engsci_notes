@@ -94,3 +94,20 @@ Since the speed of sound can be related to the isentorpic compressibility as fol
 $$
 a^2 = \frac{1}{\rho \beta_{s}}
 $$
+Freestream mach number:
+$$
+M_{\infty} = \frac{V_{\infty}}{a_{\infty}}
+$$
+**Incrompressible Subsonic** $M_{\infty} \leq 0.1$
+![[Pasted image 20250109171523.png]]
+Relatively smooth streamlines and continous varying low properties
+
+**Compressible Subsonic** $0.1 \leq M_{\infty} \leq 0.8$
+![[Pasted image 20250109171736.png]]
+
+**Transonic Regime** $0.8 \leq M_{\infty} \leq 1.2$
+![[Pasted image 20250109172003.png]]
+**Supersonic Regime** $1.2 \leq M_{\infty} \leq 5$
+![[Pasted image 20250109171943.png]]
+**Hypersonic Regime** $M_{\infty} \geq 5$
+![[Pasted image 20250109171911.png]]
