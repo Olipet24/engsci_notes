@@ -34,3 +34,7 @@ Some dynamic systems can be acausal (depend on future values of the input vector
 
 ## System Models
 - A (simplified) representation (or abstraction of a (physical) system
+- A "universal model" is not useful (featuring ALL aspects of a physical system)
+	- may not be feasible or relevant (due to complexity)
+		- System can have multiple models (for different purposes)
+- An effective model is a simple (simplest) representation of the system, focusing only on points of interest (Occam's razor/principle of parsimony)
