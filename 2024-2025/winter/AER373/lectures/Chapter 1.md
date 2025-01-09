@@ -238,6 +238,8 @@ the key definition of a tensor is that it transforms in a particularly way when 
 
 **Direction Cosine** cosine of smallest angle between two different directions
 
+$l_{ij}$ is the cosine roation matrix, where each element is the directional cosine between each axis
+
 if the components of a physical phenomenon do not transform ths way under rotations, then the physical phenomenon does not have tensorial characteristics
 
 if a transformation, constant and orthogonal, for a rotation of $O^1$ around w.r.t to $O$ axes, it is called cartesian.
@@ -246,8 +248,9 @@ if a transformation, constant and orthogonal, for a rotation of $O^1$ around w.r
 
 **Kronecker's Delta Tensor**
 ![[Pasted image 20250109153043.png]]
-similar to Identity matrix
+similar to Identity matrix, used to swap an index
 $\delta_{ij} a_{jk} = a_{ik}$
+
 **Levi-Cevita (Permutation tensor)**
 ![[Pasted image 20250109153143.png]]
 An even permutation is clockwise, where i,j,k are put in a circle sorted by increasing order clockwise
@@ -255,10 +258,37 @@ An even permutation is clockwise, where i,j,k are put in a circle sorted by incr
 Cross product $a = b \times c$ can be represented by:
 $a_{i} = e_{ijk}b_{j}c_{k}$
 
+**Examples of Evaluation of Carteisin Tensor**
+$$
+a_{ij} = \begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+$$
+$$
+b_{ij} = \begin{bmatrix}
+5 & 6 \\
+ 7 & 8
+\end{bmatrix}
+$$
+what is: $\delta_{ij}a_{jk}b_{ik} = 70$
 
-#### Differentiation of Tensors
+Can evaluate by either using a table, or by seeing that delta is used to swap out indexes. In this case, the index j with i for $a_{ij}$
+#### (Spatial) Differentiation of Tensors
 
-
+We frefe to this by putting comma after subscript with respect to a certain dimension we want
+$$
+\frac{\partial \phi}{\partial x_{i}} = \phi_{,i} = f_{i}
+$$
+$$
+\frac{\partial f_{i}}{\partial x_{j}} = f_{i,j} = a_{ij}
+$$
+$$
+\frac{\partial f_{i}}{x_{i}} = f_{i,i} = 0
+$$
+$$
+\frac{\partial a_{ij}}{}
+$$
 #### Calculation of Cauchy true stress
 
 Calculating the stress of a cylinder being pulled coaxially
