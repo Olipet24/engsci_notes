@@ -276,19 +276,64 @@ what is: $\delta_{ij}a_{jk}b_{ik} = 70$
 Can evaluate by either using a table, or by seeing that delta is used to swap out indexes. In this case, the index j with i for $a_{ij}$
 #### (Spatial) Differentiation of Tensors
 
-We frefe to this by putting comma after subscript with respect to a certain dimension we want
+We reference this by putting comma after subscript with respect to a certain dimension we want
+
+gradient Zeroth order cartesian tensor
 $$
 \frac{\partial \phi}{\partial x_{i}} = \phi_{,i} = f_{i}
 $$
+gradient of first order cart. tensor
 $$
 \frac{\partial f_{i}}{\partial x_{j}} = f_{i,j} = a_{ij}
 $$
+divergence of first order cart. tensor
 $$
 \frac{\partial f_{i}}{x_{i}} = f_{i,i} = 0
 $$
+divergence of second order cart. tensor
 $$
-\frac{\partial a_{ij}}{}
+\frac{\partial A_{ij}}{x_{j}} = A_{ij,j}=f_{i}
 $$
+**Example 1**
+
+$$
+A_{ij} = \begin{bmatrix}
+x_{1} + x_{2}  & -x_{1}x_{2} \\
+-x_{1}x_{2} & 2x_{2}
+\end{bmatrix}
+$$
+What is $A_{ik,i}$?
+
+$b_{i} = \frac{\partial A_{11}}{}$
+
+**Example 2**
+
+Calculate gradient of
+$$
+a_{i}=\begin{bmatrix}
+x_{1}x_{2} \\
+x_{1}-x_{2}
+\end{bmatrix}
+$$
+what is $a_{i,j}$
+$$
+b_{ij} = \frac{\partial a_{i}}{\partial x_{j}}
+$$
+gradient increases order of tensor
+$f_{ij} = A_{ij}$
+divergence decreases order of order of a tensor
+$f_{i,i} = A_{i,i}$
+contraction operation reduces the order of a tensor
+$f_{i}g_{i}$ or $A_{ii} = 0$
+==add stuff here==
+
+#### What makes something a tensor
+
+a tensor mus transform according to the rules stated previoously
+
+quotient rule is also a standard check, i $b_{i}, c_{i}$ are first order tensors:
+$A_{ij}b_{j} = c_{i}$
+then $A_{ij}$ is a second order tensor
 #### Calculation of Cauchy true stress
 
 Calculating the stress of a cylinder being pulled coaxially
