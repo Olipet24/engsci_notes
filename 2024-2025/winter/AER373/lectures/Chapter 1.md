@@ -225,9 +225,20 @@ The stress tensor allows for the determination of traction at a point for any su
 - stress has a physical meaning phenomenon
 - need to obey Galilean principle of invariance: needs to appear the same physically the same to multiple observers
 
+A tensor can be expressed as an array or matrix of quantities which depend upon the axes and the basis chosen
+
+**Note:** a tensor which is zero in one reference frame is zero in all reference frames
+
+zeroe'th order tensors are like scalars; first order are like vectors; second orders are like matrices
+
+the key definition of a tensor is that it transforms in a particularly way when the reference coord system is rotated from $O$ to $O^1$
+
+zeroeth order: $\phi^1 = \phi$
+first order: $f_{i}^1 = l_{ij}f_{j}$
+Second order: $A_{ij}^1 = l_{ik}l_{jl}A_{kl}$
 #### Calculation of Cauchy true stress
 
-Calculating the stress of a clind being pulled coaxially
+Calculating the stress of a cylinder being pulled coaxially
 
 $\sigma_{0} = \frac{P}{A_{0}}$
 $A_{0}=\pi r_{0}^2$
