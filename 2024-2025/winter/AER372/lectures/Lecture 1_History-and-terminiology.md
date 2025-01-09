@@ -74,9 +74,12 @@ Cons:
 
 This control system use the On-Off technique
 - When the outside temperature gets below a certain threshold relative to the setpoint temp due to heat loss, the heating system turns on until temperature rises back to the temp set point
+- The disturbance to the system might be opening the window or changing the temperature of the environment
 
 **Example 2**
 ![[Pasted image 20250106174328.png]]
+Controls the amount of gas intake in the car to control the speed of the car
+For every degree of throttle change, we increase the speed by 10 mph.
 
 ![[Pasted image 20250106174349.png]]
 
